@@ -201,7 +201,23 @@ body {
     color: #ffd723;
     transition: color .3s ease-in-out;
 }
+/* ========== Partners Section =============*/
+.partners {
+    background: #FFF;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 2px;
+}
 
+.partners__box {
+    max-width: 1045px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 55px 65px;
+}
 /* ========== Services Section =============*/
 .services {
     margin: 150px auto -60px;
@@ -324,6 +340,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-style: normal;
+    transition: color .3s ease-in-out;
 }
 
 .footer__content {
@@ -363,6 +380,7 @@ body {
     transition: color .3s ease-in-out;
 }
 
+.contacts__data:hover,
 .column__link:hover {
     color: #ffd723
 }
@@ -380,6 +398,11 @@ body {
     color: #fff;
     text-decoration: none;
     padding-bottom: 24px;
+    transition: color .3s ease-in-out;
+}
+
+.column__mail:hover {
+    color: #ffd723;
 }
 
 .column__socials {
@@ -396,11 +419,13 @@ body {
     height: 33px;
     width: 33px;
     border-radius: 100%;
-    background-color: #444A34;
+    background-color: #343828;
     background-position: center;
     background-size: 21px auto;
     background-repeat: no-repeat;
     cursor: pointer;
+    opacity: .3;
+    transition: all .3s ease-in-out;
 }
 
 .social__link-fb {
@@ -414,13 +439,17 @@ body {
 .social__link-g {
     background-image: url('../img/footer/google-plus.svg');
     background-size: 30px auto;
-    background-position: 3px -1px;
+    background-position: 3px -2px;
 }
 
 .social__link-in {
     background-image: url('../img/footer/linkedin.svg');
     background-size: 18px auto;
-    
+}
+
+.social__link:hover {
+    background-color: #ffd723;
+    opacity: 1;
 }
 
 .footer__logo {
