@@ -169,6 +169,7 @@ body {
 }
 
 .promo__body {
+    
     max-width: 616px;
     width: 100%;
 }
@@ -203,9 +204,13 @@ body {
 }
 /* ========== Partners Section =============*/
 .partners {
-    background: #FFF;
+    position: relative;
+    top: -100px;
+    width: 80%;
+    margin-left: auto;
+    background: #FAFAFA;
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 
 .partners__box {
@@ -227,7 +232,6 @@ body {
 .services__title {
     max-width: 660px;
     width: 100%;
-
     margin: 150px 0 60px;
 }
 
@@ -273,7 +277,81 @@ body {
 .item__link svg {
     fill: currentColor;
 }
+/* ========== WE Do Section ================== */
 
+.we-do__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.we-do__item {
+    max-width: 475px;
+    margin-top: 120px;
+}
+
+.we-do__suptitle {
+    margin-bottom: 30px;
+}
+
+.we-do__title {
+    margin-bottom: 35px;
+}
+
+.we-do__decor {
+    padding: 2px 10px;
+    background: rgba(255, 215, 35, 0.1);
+}
+
+.we-do__descr {
+    margin-bottom: 42px;
+    font-size: 16px;
+}
+
+.we-do__card {
+    max-width: 475px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+}
+
+.card__body {
+    margin-top: auto;
+    padding: 160px 20px 60px 40px;
+}
+.card__quote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #4D533C;
+    margin-bottom: 50px;
+}
+.card__auth-name {
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #4D533C;
+    padding-left: 50px;
+}
+.card__auth-pos {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #152934;
+    margin-left: 50px;
+}
+.card__auth-name::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-image: url("../img/we-do/img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /* ========== Get Started Section =============*/
 .get-start {
     position: relative;
