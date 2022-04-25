@@ -52,8 +52,8 @@ body {
     font-style: normal;
 }
 .container {
-    max-width: 1140px;
-    padding: 0 15px;
+    max-width: 1110px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .link {
@@ -121,6 +121,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
 }
 .burger {
     display: block;
@@ -335,11 +336,11 @@ body {
 }
 .text__block--left {
     padding: 100px;
-    padding-right: 0;
+    padding-right: 30px;
 }
 .text__block--right {
     padding: 100px;
-    padding-left: 0;
+    padding-left: 30px;
 }
 .article__txt {
     margin-bottom: 24px;
@@ -359,10 +360,10 @@ body {
     bottom: -10%;
 }
 .card-article--left {
-    right: -5%;
+    right: -15%;
 }
 .card-article--right {
-    left: -5%;
+    left: -15%;
 }
 .article-card__body {
     padding: 30px;
@@ -439,6 +440,7 @@ body {
     font-size: 14px;
     line-height: 186%;
     color: rgba(33, 56, 66, 0.6);
+    padding-right: 30px;
 }
 .item__link {
     display: block;
@@ -462,6 +464,7 @@ body {
 .get-start__box {
     max-width: 882px;
     margin: 0 auto;
+    padding-left: 30px;
 }
 .get-start__title {
     font-weight: 700;
@@ -604,4 +607,30 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+}
+/* === MEDIA BREAK POINTS ============== */
+@media (max-width: 992px) {
+    .services__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card__quote {
+        font-size: 18px;
+    }
+    .card__auth-name {
+        font-size: 16px;
+    }
+    .projects__descr {
+        padding-left: 95px;
+    }
+    .article {
+        margin-bottom: 170px;
+    }
+    .item {
+        max-width: none;
+    }
+}
+@media (max-width: 768px) {}
+@media (max-width: 576px) {}
+@media (max-width: 375px) {}
+    
 }
