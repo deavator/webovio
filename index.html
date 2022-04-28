@@ -13,10 +13,20 @@
 
 <body>
   <header class="header container header-container">
-    <a href="#" class="header__logo logo">Webovio.
-      <!-- <img src="assets/img/header/logo.svg" alt="Webovio Logo" class="logo__image"> -->
-      <!-- <span class="logo__text">Webovio.</span> -->
-    </a>
+    <div class="logo-top">
+      <img class="logo__image" src="assets/img/header/logo.svg" alt="Webovio Logo">
+      <span class="logo__text">Webovio.</span>
+    </div>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="#home" class="navbar__link">home</a></li>
+        <li class="navbar__item"><a href="#partners" class="navbar__link">partners</a></li>
+        <li class="navbar__item"><a href="#we-do" class="navbar__link">we do</a></li>
+        <li class="navbar__item"><a href="#projects" class="navbar__link">projects</a></li>
+        <li class="navbar__item"><a href="#services" class="navbar__link">services</a></li>
+        <li class="navbar__item"><a href="#get-start" class="navbar__link">get started</a></li>
+      </ul>
+    </nav>
     <button class="logo__burger burger" aria-label="Open menu">
       <span class="burger__line"></span>
       <span class="burger__line"></span>
@@ -26,7 +36,7 @@
 
   <main>
     <!-- PROMO -->
-    <section class="promo">
+    <section class="promo" id="home">
       <div class="container">
         <div class="promo__body">
           <span class="promo__subtitle">A place where</span>
@@ -45,7 +55,7 @@
     </section>
 
     <!-- PARTNERS -->
-    <!-- <section class="partners">
+    <section class="partners container" id="partners">
       <div class="partners__box">
         <ul class="partners__list">
           <li class="partners__item"><a href="" class="partners__link">
@@ -70,10 +80,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- WEDO -->
-    <section class="we-do">
+    <section class="we-do" id="we-do">
       <div class="container">
         <div class="we-do__body">
           <div class="we-do__item">
@@ -108,7 +118,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <!-- Heading -->
         <div class="projects__header">
@@ -220,7 +230,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services container">
+    <section class="services container" id="services">
       <h2 class="services__title site-title">
         Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way to&nbsp;Kick off Your Product Idea
       </h2>
@@ -249,7 +259,7 @@
           </a>
         </li>
         <li class="services__item item">
-          <h3 class="item__title">UX<br>Review</h3>
+          <h3 class="item__title">UX Review</h3>
           <p class="item__descr">An&nbsp;evaluation which will help you radically improve your product.</p>
           <a href="#" class="item__link link">
             <svg width="6" height="11" viewBox="0 0 6 11" xmlns="http://www.w3.org/2000/svg">
@@ -260,7 +270,7 @@
           </a>
         </li>
         <li class="services__item item">
-          <h3 class="item__title">Code<br>Review</h3>
+          <h3 class="item__title">Code Review</h3>
           <p class="item__descr">Do&nbsp;you know what one of&nbsp;the key secrets of&nbsp;success is&nbsp;what makes
             people successful in&nbsp;business</p>
           <a href="#" class="item__link link">
@@ -275,7 +285,7 @@
     </section>
 
     <!-- GET STARTED -->
-    <section class="get-start">
+    <section class="get-start" id="get-start">
       <div class="get-start__box">
         <h2 class="get-start__title">Let&rsquo;s make something amazing together.</h2>
         <a href="#" class="get-start__link link">
@@ -355,8 +365,12 @@
       <!-- End of Columns -->
 
       <div class="footer__logo">
-        <a href="#" class="logo"><span class="logo__text">Webovio</span></a>
-        <small class="footer__copyright">&copy;&nbsp;2020@webovio. All Rights Reserved.</small>
+        <!-- <a href="#" class="logo"><span class="logo__text">Webovio</span></a> -->
+        <div class="logo-top">
+          <img class="logo__image" src="assets/img/header/logo.svg" alt="Webovio Logo">
+          <span class="logo__text">Webovio.</span>
+        </div>
+        <small class="footer__copyright">&copy;&nbsp; 2022@webovio. All Rights Reserved.</small>
       </div>
       <!-- End of Logo -->
     </div>
